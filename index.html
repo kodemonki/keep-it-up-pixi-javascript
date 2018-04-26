@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.2.2/pixi.min.js"></script>
+    <script src="js/game.js" type="text/javascript"></script>
+    <div id="topLeftPanel">
+        <div id="scoreDiv">SCORE : 0</div>
+        <div id="highScoreDiv">HIGH SCORE : 0</div>
+    </div>
+    <div id="topRightPanel">
+        <div id="viewLeaderboardBtn">VIEW LEADERBOARD</div>
+    </div>
+    <div id="leaderboard">
+        <div id="leaderboard_back"></div>
+        <div id="leaderboard_list">
+            <p class="centered">Leaderboard</p>
+            <div class="leaderboard_divider"></div>
+            <table id="leaderboard_results" width="100%">
+            </table>
+            <div class="leaderboard_divider"></div>
+            <div class="centered">
+                <label>High Score</label>
+                <span id='formScoreDiv'>0</span>
+                <br>
+                <br>
+                <label>Name</label>
+                <input id="newUsername" type="text" />
+                <br><br>
+                <a href="#" id="submitBtn">SUBMIT</a>
+                <br><br>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

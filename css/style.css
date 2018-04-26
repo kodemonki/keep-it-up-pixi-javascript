@@ -1,0 +1,169 @@
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        background-image: url(../images/gameBackground1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        font-size: 18px;
+        color: white;
+    }
+    
+    #gameCanvas {
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+    
+    #gameContainer {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #gameCanvas {
+        position: absolute;
+        background-color: black;
+        background-image: url(../images/gameBackground1.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    
+    #topLeftPanel {
+        font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+        top: 0px;
+        left: 0px;
+        padding: 5px;
+        position: absolute;
+        background-color: black;
+        border-radius: 0px 0px 5px 0px;
+        border-right: 2px solid white;
+        border-bottom: 2px solid white;
+        max-width: 50%;
+    }
+    
+    #topRightPanel {
+        font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+        bottom: 0px;
+        right: 0px;
+        padding: 5px;
+        position: absolute;
+        background-color: black;
+        border-radius: 5px 0px 0px 0px;
+        border-left: 2px solid white;
+        border-top: 2px solid white;
+        max-width: 50%;
+    }
+    
+    #scoreDiv {
+        padding: 10px;
+    }
+    
+    #HighScoreDiv {
+        padding: 10px;
+    }
+    
+    #viewLeaderboardBtn {
+        padding: 10px;
+        cursor: pointer;
+    }
+    
+    #leaderboard {
+        display: none;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+    
+    #leaderboard_back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+    
+    #leaderboard_list {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+        padding: 5px 20px;
+        position: absolute;
+        background-color: black;
+        border-radius: 5px 5px 5px 5px;
+        border: 2px solid white;
+        min-width: 50%;
+    }
+    
+    #leaderboard_list td {}
+    
+    #leaderboard_results tr td {}
+    
+    .leaderboard_divider {
+        display: block;
+        height: 1px;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-color: white;
+    }
+    
+    .centered {
+        text-align: center;
+    }
+    
+    .align-left {
+        text-align: left;
+    }
+    
+    .align-right {
+        text-align: right;
+    }
+    
+    #submitBtn {
+        padding-top: 20px;
+        padding-bottom: 10px;
+        text-decoration: none;
+        color: white;
+    }
+    
+    @media all and (max-width: 1024px) {
+        body {
+            font-size: 18px;
+        }
+        #leaderboard_results tr td {
+            font-size: 18px;
+        }
+    }
+    
+    @media all and (max-width: 800px) {
+        body {
+            font-size: 18px;
+        }
+        #leaderboard_results tr td {
+            font-size: 18px;
+        }
+    }
+    
+    @media all and (max-width: 600px) {
+        body {
+            font-size: 14px;
+        }
+        #leaderboard_results tr td {
+            font-size: 14px;
+        }
+    }
+    
+    @media all and (max-width: 400px) {
+        body {
+            font-size: 10px;
+        }
+        #leaderboard_results tr td {
+            font-size: 10px;
+        }
+    }
